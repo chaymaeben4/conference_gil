@@ -1,0 +1,17 @@
+.text-coming {
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-left: 100px;
+    animation: shadow-flicker 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes shadow-flicker {
+    0% {
+        text-shadow: 3px 2px 10px #F56960;
+    }
+    100% {
+        text-shadow: 3px 2px 20px #F56960;
+    }
+}
