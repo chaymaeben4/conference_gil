@@ -1,0 +1,49 @@
+.sponsors-section {
+  padding: 20px 0;
+  background-color: #fff; /* Or any background color you prefer */
+  text-align: center;
+}
+
+.row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center; /* This will vertically align the flex items */
+  justify-content: center; /* This will horizontally align the flex items */
+}
+
+.col-auto {
+  display: flex;
+  align-items: center; /* Aligns the logos vertically */
+  justify-content: center; /* Aligns the logos horizontally */
+}
+
+.sponsor-img {
+  max-height: 150px; /* Maximum height for logos */
+  width: auto; /* Maintain the aspect ratio */
+  margin: 0 15px; /* Spacing between logos */
+  transition: transform 0.3s ease; /* Smooth transition for any hover effects */
+}
+
+.sponsor-img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sponsor-logo {
+    max-height: 80px; /* Smaller max height for smaller screens */
+    margin: 10px 15px; /* Smaller margins for tighter spaces */
+  }
+}
+
+@media (max-width: 576px) {
+  .sponsor-logo {
+    max-height: 60px; /* Even smaller for very small screens */
+    margin: 5px 10px; 
+  }
+  .sponsor-img {
+    margin: 10px; 
+
+  }
+}

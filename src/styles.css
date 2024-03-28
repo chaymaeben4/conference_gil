@@ -510,14 +510,14 @@ a:visited {
     margin-left: 0;
 }
 .section-heading h2 {
+    color: #696965;
     font-size: 35px;
     font-weight: 900;
     line-height: 1.1;
-    /*text-transform: uppercase;*/
     margin-right: auto;
 }
 .section-heading h5 {
-    color: #9e1f63;
+    color: #ba2026;
     font-size: 20px;
     font-weight: 700;
     line-height: 0.7;
@@ -547,7 +547,7 @@ a:visited {
     position: relative;
 }
 .section-heading .dash-style:before {
-    background-color: #9e1f63;
+    background-color: #ba2026;
     content: "";
     height: 3px;
     width: 70px;
@@ -556,6 +556,7 @@ a:visited {
     left: 0;
     top: 50%;
 }
+
 
 .title-icon-divider {
     color: #0791BE;
@@ -3080,51 +3081,6 @@ input[type=submit]:focus {
     color: #ffffff;
     display: block;
 }
-@media screen and (min-width: 768px) {
-    .callback-counter-wrap .counter-item {
-        border-right: 1px solid rgba(255, 255, 255, 0.4);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-    }
-    .callback-counter-wrap .counter-item:nth-child(2n+2) {
-        border-right: none;
-    }
-    .callback-counter-wrap .counter-item:last-child, .callback-counter-wrap .counter-item:nth-last-child(2) {
-        border-bottom: none;
-    }
-    .counter-no{
-        font-size: 10px;
-    }
-}
-@media screen and (max-width: 767px) {
-    .callback-counter-wrap .counter-item {
-        width: 100%;
-    }
-    .callback-counter-wrap .counter-item {
-        margin-bottom: 10px;
-    }
-    .callback-counter-wrap .counter-content {
-        width: -moz-calc(100% - 0px);
-        width: -webkit-calc(100% - 0px);
-        width: calc(100% - 0px);
-        padding-left: 20px;
-        text-align: center;
-    }
-}
-@media screen and (max-width: 575px) {
-    .callback-counter-wrap {
-        margin-bottom: 30px;
-    }
-
-}
-@media screen and (max-width: 479px) {
-    .fullwidth-callback .callback-counter-wrap .counter-item {
-        width: 100%;
-    }
-    .counter-no{
-        font-size: 8px;
-
-    }
-}
 .callback-img {
     position: relative;
 }
@@ -4706,24 +4662,17 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .fullwidth-callback {
+    background-color: rgba(68, 64, 63, 0.1);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 90px;
-    position: relative;
     background-image: url('assets/images/background.jpg');
+    position: relative;
+    border-radius: 10px;
     margin-bottom: 90px;
 }
-.fullwidth-callback:before {
-    background-color: #151515;
-    opacity: 0.6;
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
+
 .fullwidth-callback .callback-counter-wrap {
     position: relative;
     margin: -10px;
@@ -4762,15 +4711,71 @@ Due to the split circle of progress-left and progress right, we must use the ani
     width: -webkit-calc(100% - 70px);
     width: calc(100% - 70px);
 }
+
+
+@media screen and (min-width: 768px) {
+    .callback-counter-wrap .counter-item {
+        border-right: 1px solid rgba(255, 255, 255, 0.4);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    .callback-counter-wrap .counter-item:nth-child(2n+2) {
+        border-right: none;
+    }
+    .callback-counter-wrap .counter-item:last-child, .callback-counter-wrap .counter-item:nth-last-child(2) {
+        border-bottom: none;
+    }
+    .counter-no{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .callback-counter-wrap .counter-item {
+        width: 100%;
+    }
+    .callback-counter-wrap .counter-item {
+        margin-bottom: 10px;
+    }
+    .callback-counter-wrap .counter-content {
+        width: -moz-calc(100% - 0px);
+        width: -webkit-calc(100% - 0px);
+        width: calc(100% - 0px);
+        padding-left: 20px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 575px) {
+    .callback-counter-wrap {
+        margin-bottom: 30px;
+    }
+
+}
+@media screen and (max-width: 479px) {
+    .fullwidth-callback{
+        padding: 45px;
+    }
+    .fullwidth-callback .callback-counter-wrap .counter-item {
+        width: 100%;
+    }
+
+    .counter-no{
+        font-size: 8px;
+
+    }
+}
+
 @media screen and (max-width: 575px) {
     .fullwidth-callback .callback-counter-wrap .counter-item {
         width: 20%;
     }
+
 }
 @media screen and (max-width: 479px) {
     .fullwidth-callback .callback-counter-wrap .counter-item {
         width: 20%;
     }
+
+
+
     .counter-no{
         font-size: 8px;
 
@@ -5718,29 +5723,6 @@ procduct details css
     }
 }
 
-.service-content-wrap {
-    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-}
-.service-content-wrap .service-img {
-    margin-top: 30px;
-}
-@media screen and (min-width: 768px) {
-    .service-content-wrap {
-        margin-bottom: 20px;
-    }
-}
-@media screen and (min-width: 992px) {
-    .service-content-wrap {
-        margin-bottom: 40px;
-    }
-}
-@media screen and (max-width: 575px) {
-    .service-content-wrap {
-        margin-bottom: 30px;
-        padding: 25px;
-    }
-}
 
 .service-header {
     display: -webkit-box;
@@ -5756,7 +5738,7 @@ procduct details css
     margin-bottom: 20px;
 }
 .service-header .service-count {
-    color: rgba(7, 145, 190, 0.4);
+    color: 44403f;
     font-family: "Raleway", sans-serif;
     font-size: 65px;
     font-weight: 900;

@@ -1,62 +1,25 @@
-<section class="special-section" id="important-date">
+<section class="special-section" id="important-dates">
   <div class="container">
     <div class="section-heading text-center">
-<div class="row">
-  <div class="col d-flex justify-content-center">
-    <div class="col-lg-12">
-      <h5 class="dash-style">SPECIAL Dates</h5>
-      <div class="tab-container">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item ">
-            <a class="nav-link  "   [ngClass]="{'active': isFullPaperTabSelected}" (click)="onFullPaperTabClick()"  role="tab"  aria-selected="true">Full paper submission deadline </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="program-tab"  data-toggle="tab" [ngClass]="{'active': isAuthorsNotificationTabSelected}" (click)="onAuthorsNotificationTabClick()"   role="tab" aria-controls="program" aria-selected="false">Authors Notification </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="review-tab" data-toggle="tab"  role="tab"  [ngClass]="{'active': isCameraReadyTabSelected}" (click)="onCameraReadyTabClick()" aria-controls="review" aria-selected="false">Camera-ready submission </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="map-tab" data-toggle="tab"  role="tab" [ngClass]="{'active': isConferenceDateTabSelected}"  (click)="onConferenceDateTabClick()" aria-controls="map" aria-selected="false">Conference date</a>
-          </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active"  role="tabpanel" aria-labelledby="overview-tab">
-            <div class="overview-content" >
-              <i class="fa-solid fa-calendar-days"></i>
-              05 May 2024 .
-            </div>
-          </div>
-          <div class="tab-pane fade show " id="full-paper" role="tabpanel" aria-labelledby="overview-tab">
-            <div class="" >
-              <i class="fa-solid fa-calendar-days"></i>
-              05 May 2024 .
-            </div>
-          </div>
-          <div class="tab-pane" id="authors-notification" role="tabpanel" aria-labelledby="program-tab">
-            <div class="">
-              <i class="fa-solid fa-calendar-days"></i>
-              3rd June 2024
-            </div>
-          </div>
-          <div class="tab-pane" id="camera-ready"  role="tabpanel" aria-labelledby="review-tab">
-            <div class="">
-              <i class="fa-solid fa-calendar-days"></i>
-              1st September 2024
-            </div>
-          </div>
-
-        <div class="tab-pane" id="conference-date" role="tabpanel" aria-labelledby="review-tab">
-          <div class="">
-            <i class="fa-solid fa-calendar-days"></i>
-            From October 17 to 19, 2024
-          </div>
-        </div>
-      </div>
-        </div>
-      </div>
+      <h5 class="dash-style">Important Dates</h5>
     </div>
-</div>
+    <div class="dates-container">
+      <div class="date-entry">
+        <div class="date-title">Full Paper Submission Deadline:</div>
+        <div class="date-info">05 May 2024</div>
+      </div>
+      <div class="date-entry">
+        <div class="date-title">Authors Notification:</div>
+        <div class="date-info">3rd June 2024</div>
+      </div>
+      <div class="date-entry">
+        <div class="date-title">Camera-Ready Submission:</div>
+        <div class="date-info">1st September 2024</div>
+      </div>
+      <div class="date-entry">
+        <div class="date-title">Conference Date:</div>
+        <div class="date-info">From October 17 to 19, 2024</div>
+      </div>
     </div>
   </div>
 </section>

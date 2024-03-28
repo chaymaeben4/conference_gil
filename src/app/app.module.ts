@@ -16,7 +16,7 @@ import {ImportantDatesComponent} from "./home/important-dates/important-dates.co
 import {SpecialSessionsComponent} from "./home/special-sessions/special-sessions.component";
 import {AdresseMapComponent} from "./home/adresse-map/adresse-map.component";
 import {ScientificComponent} from "./home/committee/scientific/scientific.component";
-import {SpeakersComponent} from "./other_pages/speakers/speakers.component";
+import {SpeakersComponent} from "./home/speakers/speakers.component";
 import {FooterComponent} from "./shared/footer/footer.component";
 import {OrganizingChairsComponent} from "./home/committee/organizing-chairs/organizing-chairs.component";
 import {CommitteeComponent} from "./home/committee/committee.component";

@@ -29,4 +29,12 @@ export class HeaderComponent {
       this.sticky = false;
     }
   }
+  mobileMenuOpen = false;
+
+  toggleMobileMenu(): void {
+    this.mobileMenuOpen = !this.mobileMenuOpen;
+    console.log('Mobile menu toggled, now:', this.mobileMenuOpen);
+  }
 }
+
+

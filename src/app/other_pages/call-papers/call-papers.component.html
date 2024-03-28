@@ -15,95 +15,28 @@
     <!-- service html start -->
     <div class="service-page-section">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="service-content-wrap">
-                        <div class="service-content">
-                            <div class="service-header">
-                                 <span class="service-count">
-                                    01.
-                                 </span>
-                                <h3>Industrial and Logistics Organization and Management (ILOM)</h3>
-                            </div>
-                            <p>• Lean Manufacturing and Logistics</p>
-                            <p>• Six sigma, continuous improvement, competitiveness and performance</p>
-                            <p>• Supply chain, extended enterprise</p>
-                            <p>• Risk management</p>
-                            <p>• Project management, human factor and organization</p>
-                            <p>• Decision support tools and Operational Research </p>
-
-                        </div>
-                        <figure class="service-img">
-                            <img src="assets/images/ilom.jpg" alt="">
-                        </figure>
+          <div class="row">
+            <ng-container *ngFor="let topic of topics">
+              <div class="col-md-6">
+                <div class="service-content-wrap">
+                  <div class="service-content">
+                    <div class="service-header">
+                      <span class="service-count">{{ topic.number }}.</span>
+                      <h3>{{ topic.title }}</h3>
                     </div>
+                    <ul>
+                      <li *ngFor="let item of topic.items">{{ item }}</li>
+                    </ul>
+                  </div>
+                  <figure class="service-img">
+                    <img [src]="topic.imageUrl" [alt]="topic.altText">
+                  </figure>
                 </div>
-                <div class="col-md-6">
-                    <div class="service-content-wrap">
-                        <div class="service-content">
-                            <div class="service-header">
-                                 <span class="service-count">
-                                    02.
-                                 </span>
-                                <h3> Industrial and Logistics Information Systems (ILIS)</h3>
-                            </div>
-                            <p>• Decision-making and cooperative systems</p>
-                            <p>• Skills and knowledge management systems</p>
-                            <p>• Business Process Management (BPM)</p>
-                            <p>• Enterprise resource planning (ERP)</p>
-                            <p>• Manufacturing Execution Systems (MES)</p>
-                            <p>• Product Life Cycle Management (PLM)</p>
-                        </div>
-                        <figure class="service-img">
-                            <img src="assets/images/ilis.jpg" alt="">
-                        </figure>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="service-content-wrap">
-                        <div class="service-content">
-                            <div class="service-header">
-                                 <span class="service-count">
-                                    03.
-                                 </span>
-                                <h3> Industrial and Logistics Products and Equipment (ILPE)</h3>
-                            </div>
-                            <p>• Product and process design</p>
-                            <p>• Reliability and maintenance of equipment</p>
-                            <p>• Hygiene, safety, ergonomics and environment</p>
-                            <p>• Product and process quality management</p>
-                            <p>• System engineering</p>
-                        </div>
-                        <figure class="service-img">
-                            <img src="assets/images/ilpe.jpg" alt="">
-                        </figure>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="service-content-wrap">
-                        <div class="service-content">
-                            <div class="service-header">
-                                 <span class="service-count">
-                                    04.
-                                 </span>
-                                <h3>Digital Transformation of Industrial and Logistics Systems (DTILS) </h3>
-                            </div>
-                            <p>• Cyber Physical System</p>
-                            <p>• Internet of Things</p>
-                            <p>• Artificial Intelligence and Machine Learning</p>
-                            <p>• Digital Twin and Simulation</p>
-                            <p>• Blockchain</p>
-                            <p>• Big Data</p>
-
-                        </div>
-                        <figure class="service-img">
-                            <img src="assets/images/dtils.jpg" alt="">
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>          
+      </div>          
 
 </main>
 <app-footer></app-footer>

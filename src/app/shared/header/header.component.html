@@ -9,11 +9,6 @@
                             <li>
                               <a href="#map"> <i class="fas fa-map-marker-alt" ></i>  BP 575, Avenue Abdelkrim Khattabi, 40000, Guéliz Marrakech</a>
                             </li>
-                            <li>
-                                <h3 class="text-coming">Comming Soon</h3>
-                            </li>
-
-
                         </ul>
                     </div>
                 </div>
@@ -39,41 +34,72 @@
                     </a>
                 </h1>
             </div>
+            <button class="mobile-menu-toggle d-lg-none" (click)="toggleMobileMenu()">
+                <div class="hamburger-menu" [class.change]="mobileMenuOpen">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+            </button>  
             <div class="main-navigation d-none d-lg-block" >
                 <nav id="navigation" class="navigation">
                     <ul>
                         <li class="menu-item-has-children">
-                            <a href="#about-us" >About Us</a>
+                            <a href="#about-us">About us</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#speakers-section">Speakers</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#gallery">Gallery</a>
                         </li>
                         <li class="menu-item-has-children">
                             <a href="#" routerLink="/call_for_paper">Call for papers</a>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="#" routerLink="/speakers">Speakers</a>
-                        </li>
-                        <li class="menu-item-has-children">
                             <a href="#" routerLink="/committee" >Committees</a>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="#gallery"  >Gallery</a>
-                        </li>
-                        <li class="menu-item-has-children">
-                            <a href="#sponsors" >Sponsors</a>
-                        </li>
-                        <li class="menu-item-has-children">
-                            <a href="#contact">Contact Us</a>
-                        </li>
-
-                        <li class="menu-item-has-children">
                             <a href="https://easychair.org/my/conference?conf=sil24">Submission</a>
                         </li>
+                        <li class="menu-item-has-children">
+                            <a href="#contact-us">Contact us</a>
+                        </li>
                     </ul>
-
                 </nav>
+            </div>
+            <div class="mobile-navigation" [ngClass]="{'open': mobileMenuOpen}">
+                <nav class="d-lg-none">
+                  <ul id="mobile-menu" class="mobile-menu">
+                        <li>
+                            <a href="#about-us">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#speakers-section">Speakers</a>
+                        </li>
+                        <li>
+                            <a href="#gallery">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#sponsors">Sponsors</a>
+                        </li>
+                        <li>
+                            <a href="#" routerLink="/call_for_paper">Call for papers</a>
+                        </li>
 
+                        <li>
+                            <a href="#" routerLink="/committee" >Committees</a>
+                        </li>
+
+                        <li>
+                            <a href="https://easychair.org/my/conference?conf=sil24">Submission</a>
+                        </li>
+                        <li>
+                            <a href="#contact-us">Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
-
     </div>
-    <div class="mobile-menu-container"></div>
 </header>
