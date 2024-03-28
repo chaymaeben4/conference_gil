@@ -15,21 +15,31 @@
   </div>
 
 
-  <div class="container-fluid" >
-    <div class="row fullwidth-callback">
-      <div class="col-lg-4 col-md-6" *ngFor="let chair of chairs">
-        <div class="counter-item">
-          <div class="counter-item-inner">
-            <h3 class="counter-title">{{ chair.title }}</h3>
-            <div class="counter-name">{{ chair.name }}</div>
-            <div class="counter-email">
-              <a href="mailto:{{ chair.email }}" class="email-link">
-                <i class="fa-regular fa-envelope"></i> {{ chair.email }}
-              </a>
-            </div>            
-          </div>
-        </div>
+  <div class="chair-section">
+    <div class="chair-row">
+      <div class="chair-card" *ngFor="let chair of chairs.slice(0,4)">
+        <h3 class="chair-title">{{ chair.title }}</h3>
+        <p class="chair-name">{{ chair.name }}</p>
+        <a href="mailto:{{ chair.email }}" class="chair-email"><i class="fa-regular fa-envelope"></i> {{ chair.email }}</a>
+      </div>
+    </div>
+    <div class="chair-row centered-row">
+      <div class="chair-card-second">
+        <h3 class="chair-title">{{ chairs[4].title }}</h3>
+        <p class="chair-name">{{ chairs[4].name }}</p>
+        <a href="mailto:{{ chairs[4].email }}" class="chair-email"><i class="fa-regular fa-envelope"></i> {{ chairs[4].email }}</a>
+        <p class="chair-name">{{ chairs[5].name }}</p>
+        <a href="mailto:{{ chairs[5].email }}" class="chair-email"><i class="fa-regular fa-envelope"></i> {{ chairs[5].email }}</a>
+      </div>
+
+      <div class="chair-card-second">
+        <h3 class="chair-title">{{ chairs[6].title }}</h3>
+        <p class="chair-name">{{ chairs[6].name }}</p>
+        <a href="mailto:{{ chairs[6].email }}" class="chair-email"><i class="fa-regular fa-envelope"></i> {{ chairs[6].email }}</a>
+        <p class="chair-name">{{ chairs[7].name }}</p>
+        <a href="mailto:{{ chairs[7].email }}" class="chair-email"><i class="fa-regular fa-envelope"></i> {{ chairs[7].email }}</a>
       </div>
     </div>
   </div>
+  
 </div>

@@ -4596,6 +4596,23 @@ Due to the split circle of progress-left and progress right, we must use the ani
     }
 }
 
+
+
+.chair-section {
+    background-color: rgba(68, 64, 63, 0.1);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 35px;
+    background-image: url('assets/images/background.jpg');
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
 /*--------------------------------------------------------------
 >>> About Pages
 ----------------------------------------------------------------*/
