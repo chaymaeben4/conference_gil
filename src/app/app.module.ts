@@ -21,6 +21,7 @@ import {FooterComponent} from "./shared/footer/footer.component";
 import {OrganizingChairsComponent} from "./home/committee/organizing-chairs/organizing-chairs.component";
 import {CommitteeComponent} from "./home/committee/committee.component";
 import { VenueComponent } from './other_pages/venue/venue.component';
+import { RegistrationSubmitionComponent } from './other_pages/registration-submition/registration-submition.component';
 
 
 
@@ -45,7 +46,8 @@ import { VenueComponent } from './other_pages/venue/venue.component';
     AdresseMapComponent,
     ScientificComponent,
     CommitteeComponent,
-    VenueComponent
+    VenueComponent,
+    RegistrationSubmitionComponent
   ],
   imports: [
     BrowserModule,

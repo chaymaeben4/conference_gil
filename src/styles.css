@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+@import 'aos/dist/aos.css';
 
 
 
@@ -1327,6 +1328,8 @@ input[type=submit]:focus {
 }
 .site-header .black-logo {
     display: none;
+    width: auto;
+    height:75px;
 }
 
 .header-primary {
@@ -1861,6 +1864,8 @@ input[type=submit]:focus {
     }
     .sticky .black-logo {
         display: block;
+        width: auto;
+        height:75px;
     }
 }
 @media screen and (max-width: 991px) {
