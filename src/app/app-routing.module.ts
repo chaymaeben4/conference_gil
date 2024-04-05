@@ -8,7 +8,9 @@ import {AboutComponent} from "./home/about/about.component";
 import {GalleryComponent} from "./home/gallery/gallery.component";
 import {CommitteeComponent} from "./home/committee/committee.component";
 import {VenueComponent} from "./other_pages/venue/venue.component";
-import { RegistrationSubmitionComponent } from './other_pages/registration-submition/registration-submition.component';
+//import { RegistrationSubmitionComponent } from './other_pages/registration-submition/registration-submition.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { SubmitionComponent } from './other_pages/submition/submition.component';
 
 const routes: Routes = [
   {path:'' , component : HomeComponent},
@@ -20,7 +22,9 @@ const routes: Routes = [
   {path:'speakers' , component: SpeakersComponent},
   {path:'sponsors' , component : SponsorsComponent},
   {path:'venue' , component : VenueComponent},
-  {path:'reg-sub' , component : RegistrationSubmitionComponent}
+  //{path:'reg-sub' , component : RegistrationSubmitionComponent},
+  {path:'registration' , component : RegistrationComponent},
+  {path:'submission' , component : SubmitionComponent}
 ];
 
 @NgModule({

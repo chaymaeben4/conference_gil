@@ -22,6 +22,8 @@ import {OrganizingChairsComponent} from "./home/committee/organizing-chairs/orga
 import {CommitteeComponent} from "./home/committee/committee.component";
 import { VenueComponent } from './other_pages/venue/venue.component';
 import { RegistrationSubmitionComponent } from './other_pages/registration-submition/registration-submition.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { SubmitionComponent } from './other_pages/submition/submition.component';
 
 
 
@@ -47,7 +49,9 @@ import { RegistrationSubmitionComponent } from './other_pages/registration-submi
     ScientificComponent,
     CommitteeComponent,
     VenueComponent,
-    RegistrationSubmitionComponent
+    RegistrationSubmitionComponent,
+    RegistrationComponent,
+    SubmitionComponent
   ],
   imports: [
     BrowserModule,
