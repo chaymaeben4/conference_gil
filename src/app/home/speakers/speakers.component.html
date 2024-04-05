@@ -8,10 +8,10 @@
         </div>
     </div>
   </div>    
-  <div class="container speaker-section">
+  <div class="container speaker-section" data-aos="fade-zoom-in" data-aos-duration="1500">
       <div class="row">
         <div class="col-md-3" *ngFor="let speaker of speakers">
-          <div class="speaker-card" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+          <div class="speaker-card">
             <div class="speaker-image">
               <img [src]="speaker.imageUrl" alt="{{ speaker.name }}">
             </div>

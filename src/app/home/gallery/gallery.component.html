@@ -14,7 +14,7 @@
         </div>        
 
 
-        <div class="image-carousel slide" data-ride="carousel">
+        <div class="image-carousel slide" data-ride="carousel" data-aos="fade-zoom-in" data-aos-duration="1500">
             <div class="carousel-container">
               <div *ngFor="let image of carouselImages; let i = index" class="carousel-slide" [class.active]="i === currentIndex">
                 <img [src]="image" class="slide-image" alt="Slide {{ i + 1 }}">
