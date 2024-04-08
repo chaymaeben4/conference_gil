@@ -20,7 +20,7 @@ export class OrganizingChairsComponent implements OnInit {
     { title: 'Logistic chair', name: 'Ms. DAHBI Samia', email: 's.dahbi@uca.ma' },
     { title: 'Logistic chair', name: 'Ms. ELHAROUNI Fatine', email: 'f.elharouni@uca.ac.ma' },
     { title: 'Industrial chair', name: 'Mr. IRHIRANE Elhassan', email: 'e.irhirane@uca.ac.ma' },
-    { title: 'Industrial chair', name: 'Mr. DAKKAK Bader', email: 'b.dakkak@gmail.com' }
+    { title: 'Industrial chair', name: 'Mr. DAKKAK Badr', email: 'b.dakkak@uca.ac.ma' }
   ];
 
   ngOnInit(): void {
