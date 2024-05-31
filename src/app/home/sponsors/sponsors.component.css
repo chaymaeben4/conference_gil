@@ -1,6 +1,6 @@
 .sponsors-section {
   padding: 20px 0;
-  background-color: #fff; /* Or any background color you prefer */
+  background-color: #fff; 
   text-align: center;
 }
 
@@ -8,42 +8,45 @@
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
-  align-items: center; /* This will vertically align the flex items */
-  justify-content: center; /* This will horizontally align the flex items */
+  align-items: center; 
+  justify-content: center; 
 }
 
 .col-auto {
   display: flex;
-  align-items: center; /* Aligns the logos vertically */
-  justify-content: center; /* Aligns the logos horizontally */
+  align-items: center; 
+  justify-content: center;
 }
 
 .sponsor-img {
-  max-height: 150px; /* Maximum height for logos */
-  width: auto; /* Maintain the aspect ratio */
-  margin: 0 15px; /* Spacing between logos */
-  transition: transform 0.3s ease; /* Smooth transition for any hover effects */
+  max-height: 150px;
+  width: auto;
+  margin: 0 15px;
+  transition: transform 0.3s ease;
 }
 
 .sponsor-img:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
+  transform: scale(1.05);
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
   .sponsor-logo {
-    max-height: 80px; /* Smaller max height for smaller screens */
-    margin: 10px 15px; /* Smaller margins for tighter spaces */
+    max-height: 80px;
+    margin: 10px 15px; 
   }
 }
 
 @media (max-width: 576px) {
   .sponsor-logo {
-    max-height: 60px; /* Even smaller for very small screens */
+    max-width: 200px;
+    max-height: 60px;
     margin: 5px 10px; 
   }
   .sponsor-img {
     margin: 10px; 
-
+    max-width: 200px;
   }
+
+
 }

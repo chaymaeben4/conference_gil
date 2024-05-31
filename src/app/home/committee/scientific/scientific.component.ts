@@ -20,22 +20,24 @@ export class ScientificComponent implements OnInit {
     'Benazzouz Touria | ENSA Marrakech, UCA',
     'Essaber Fatima Ezzahra | ENSA Marrakech, UCA',
     'Benhammou Abdelaziz | ENSA Safi, UCA',
-    'Idboufker Noureddine | ENSA Marrakech, UCA',
+    'Hatim Anas ENSA Marrakech, UCA',
     'Benhida Khalid | EST Safi, UCA',
-    'Irhirane El Hassan | ENSA Marrakech, UCA',
+    'Idboufker Noureddine | ENSA Marrakech, UCA',
     'Benmoussa Rachid | ENSA Marrakech, UCA',
-    'Laaouina Loubna | ENSA Fez, USMBA',
+    'Irhirane El Hassan | ENSA Marrakech, UCA',
     'Bouyahia Fatima | ENSA Marrakech, UCA',
-    'Latif Adnane | ENSA Marrakech, UCA',
+    'Laaouina Loubna | ENSA Fez, USMBA',
     'Charkaoui Abdelkabir | FST Settat, UH1',
-    'Nejeoui Abderrazzak | ENSA Marrakech, UCA',
+    'Latif Adnane | ENSA Marrakech, UCA',
     'Cherrafi Anass | EST Safi, UCA',
-    'Starostka-Patyk Marta | Czestochowa University of Technology',
+    'Nejeoui Abderrazzak | ENSA Marrakech, UCA',
     'Dahbi Samya | ENSA Marrakech, UCA',
-    'Tajer Abdelouahed | ENSA Marrakech, UCA',
+    'Starostka-Patyk Marta | Czestochowa University of Technology',
     'Dakkak Badr | ENSA Marrakech, UCA',
+    'Tajer Abdelouahed | ENSA Marrakech, UCA',
+    'Echchatbi Abdelwahed | FST Settat, UH1',
     'Touriki Fatima Ezzahra | ENSA SAFI, UCA',
-    'Echchatbi Abdelwahed | FST Settat, UCA'
+    'Elbeid Said | ENSA Marrakech, UCA'
   ];
 
   firstColumn: string[] = [];

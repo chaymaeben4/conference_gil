@@ -14,7 +14,14 @@
   }
 
   /* Submission Styles */
-  
+  .submission-container p {
+    text-align: justify;
+  }
+
+  .submission-container b {
+    font-size: 17px;
+  }
+
   .submission-container h2 {
     text-align: center;
     margin-bottom: 20px;

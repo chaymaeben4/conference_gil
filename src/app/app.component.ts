@@ -9,7 +9,7 @@ import AOS from 'aos';
 export class AppComponent {
   ngOnInit() {
     AOS.init({
-      once: true, 
+      once: true,
     });
   }
   title = 'conference';
